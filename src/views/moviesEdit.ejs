@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Editar Película</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+      </figure>
+    <h1 class="titulo">Película a Editar:  <%= Movie.title %></h1>
+    <section class="formulario">
+        <form action="/movies/update/<%= Movie.id %>" method="POST">
+            <label for="title">Title </label>
+            <p><input 
+                style="border: 2px solid orange;
+                padding: 8px 10px;
+                width:30%;" type="text" name="title" id="title" value="<%= Movie.title %>" required></p>
+            <label for="rating">Rating </label>
+            <p><input 
+                style="border: 2px solid orange;
+                padding: 8px 10px;
+                width:30%;" type="number" name="rating" id="rating" value="<%= Movie.rating %>" required></p>
+            <label for="awards">Awards </label>
+            <p><input 
+                style="border: 2px solid orange;
+                padding: 8px 10px;
+                width:30%;" type="number" name="awards" id="awards" value="<%= Movie.awards %>" required></p>
+            <label for="release_date">Release date </label>
+            <p><input 
+                style="border: 2px solid orange;
+                padding: 8px 10px;
+                width:30%;" type="date" name="release_date" id="release_date" value="<%= Movie.release_date %>" required></p>
+            <label for="length">Length </label>
+            <p><input 
+                style="border: 2px solid orange;
+                padding: 8px 10px;
+                width:30%;" type="number" name="length" id="" value="<%= Movie.length %>" required></p>
+            <br>
+            <p> <button class="botonAgregar" type="submit"style=
+                "border: none;
+                background: lightseagreen;
+                padding: 8px 10px; ">Actualizar</button>
+        
+            <a  class="botonVolver" href="/movies"style=
+            "border: none;
+            background: lightseagreen;
+            padding: 8px 10px; color: white;">Listado de Películas</a></p>
+        </form>
+    </section>
+</body>
+
+</html>
