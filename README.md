@@ -1,1 +1,6 @@
-# Manipulacion_de_datos-M6
+# Manipulacion de datos (Modulo 6)
+## Práctica integradora / Digital House
+
+<a href="">Ver PDF del proyecto</a>
+<hr>
+<img src="">
